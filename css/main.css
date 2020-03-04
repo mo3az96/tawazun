@@ -225,13 +225,13 @@ nav .social {
     align-items: center;
     justify-content: center;
     position: absolute;
-    bottom: 25px;
+    bottom: 50px;
     left: 50%;
     transform: translateX(-50%);
   }
 }
 nav .social .socila-link {
-  font-size: 20px;
+  font-size: 25px;
   color: #fff;
   margin: 0 7px;
   -moz-transition: all 0.3s ease-in-out;
@@ -264,6 +264,11 @@ nav .nav-anchor {
   transition: all 0.3s ease-in-out;
   display: block;
   position: relative;
+}
+@media (max-width: 767px) {
+  nav .nav-anchor {
+    font-size: 36px;
+  }
 }
 html[dir=rtl] nav .nav-anchor {
   font-family: ar-exbold;
@@ -684,6 +689,11 @@ html[dir=rtl] .about-cont .page-text {
   z-index: 9;
   flex-direction: column;
   padding-top: 15rem;
+}
+@media (max-width: 767px) {
+  .contact-cont .page-content {
+    padding: 0;
+  }
 }
 .contact-cont .page-head {
   margin-bottom: 9rem;

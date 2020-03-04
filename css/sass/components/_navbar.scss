@@ -24,13 +24,13 @@ nav {
             align-items: center;
             justify-content: center;
             position: absolute;
-            bottom: 25px;
+            bottom: 50px;
             left: 50%;
             transform: translateX(-50%);
         }
 
         .socila-link {
-            font-size: 20px;
+            font-size: 25px;
             color: $fff;
             margin: 0 7px;
             @include transition(all 0.3s ease-in-out);
@@ -63,6 +63,10 @@ nav {
         @include transition(all 0.3s ease-in-out);
         display: block;
         position: relative;
+
+        @include xs {
+            font-size: 36px;
+        }
 
         #{$rtl} & {
             font-family: ar-exbold;

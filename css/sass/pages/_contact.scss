@@ -6,6 +6,10 @@
         z-index: 9;
         flex-direction: column;
         padding-top: 15rem;
+
+        @include xs {
+            padding: 0;
+        }
     }
 
     .page-head {
