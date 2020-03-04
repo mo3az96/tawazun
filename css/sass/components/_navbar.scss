@@ -65,7 +65,7 @@ nav {
         position: relative;
 
         @include xs {
-            font-size: 36px;
+            font-size: 30px;
         }
 
         #{$rtl} & {

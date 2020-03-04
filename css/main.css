@@ -267,7 +267,7 @@ nav .nav-anchor {
 }
 @media (max-width: 767px) {
   nav .nav-anchor {
-    font-size: 36px;
+    font-size: 30px;
   }
 }
 html[dir=rtl] nav .nav-anchor {
