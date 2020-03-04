@@ -759,6 +759,7 @@ html[dir=rtl] .contact-cont .contact-form {
   .contact-cont .contact-input {
     width: 100%;
     height: 40px;
+    margin-bottom: 10px;
   }
 }
 .contact-cont .contact-input:focus {
