@@ -607,6 +607,11 @@ html[dir=rtl] .header-flex .menubtn.open span:nth-child(2) {
     padding: 0 200px;
   }
 }
+@media (max-width: 767px) {
+  .home-cont .page-content {
+    padding: 0;
+  }
+}
 .home-cont .main-text {
   position: relative;
   font-size: 7.2rem;
