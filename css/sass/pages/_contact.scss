@@ -18,6 +18,23 @@
 
     }
 
+    .row {
+        @include xs {
+            display: flex;
+            flex-direction: column;
+
+            .col-md-6.col-xs-12 {
+                &:first-of-type {
+                    order: 2;
+                }
+
+                &:last-of-type {
+                    order: 1;
+                }
+            }
+        }
+    }
+
     .form-cont {
         width: 100%;
     }
@@ -30,10 +47,15 @@
         #{$rtl} & {
             margin-right: auto;
             margin-left: 2rem;
+
+            @include xs {
+                margin: 0;
+            }
         }
 
         @include xs {
             width: 100%;
+            margin: 0;
         }
     }
 
@@ -143,7 +165,7 @@
         margin: 1.6rem 2rem;
 
         @include xs {
-            margin-top: 30px;
+            margin-bottom: 30px;
             text-align: center;
         }
     }

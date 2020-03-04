@@ -632,7 +632,14 @@ html[dir=rtl] .home-cont .main-text {
 }
 @media (max-width: 767px) {
   .home-cont .main-text {
+    max-width: 75%;
     line-height: 1.5;
+    font-size: 30px;
+    font-family: bold;
+    margin: auto;
+  }
+  html[dir=rtl] .home-cont .main-text {
+    font-family: ar-bold;
   }
 }
 
@@ -687,6 +694,18 @@ html[dir=rtl] .about-cont .page-text {
     font-size: 30px;
   }
 }
+@media (max-width: 767px) {
+  .contact-cont .row {
+    display: flex;
+    flex-direction: column;
+  }
+  .contact-cont .row .col-md-6.col-xs-12:first-of-type {
+    order: 2;
+  }
+  .contact-cont .row .col-md-6.col-xs-12:last-of-type {
+    order: 1;
+  }
+}
 .contact-cont .form-cont {
   width: 100%;
 }
@@ -700,8 +719,14 @@ html[dir=rtl] .contact-cont .contact-form {
   margin-left: 2rem;
 }
 @media (max-width: 767px) {
+  html[dir=rtl] .contact-cont .contact-form {
+    margin: 0;
+  }
+}
+@media (max-width: 767px) {
   .contact-cont .contact-form {
     width: 100%;
+    margin: 0;
   }
 }
 .contact-cont .contact-input {
@@ -806,7 +831,7 @@ html[dir=rtl] .contact-cont .contact-textarea::placeholder {
 }
 @media (max-width: 767px) {
   .contact-cont .info-cont {
-    margin-top: 30px;
+    margin-bottom: 30px;
     text-align: center;
   }
 }
