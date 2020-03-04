@@ -219,4 +219,37 @@
             text-align: center;
         }
     }
+
+    .social {
+        display: flex;
+        align-items: center;
+
+        @include xs {
+            justify-content: center;
+        }
+
+        .socila-link {
+            font-size: 18px;
+            color: $fff;
+            margin-right: 37px;
+            @include transition(all 0.3s ease-in-out);
+
+            &:last-of-type {
+                margin: 0;
+            }
+
+            #{$rtl} & {
+                margin-left: 37px;
+
+                &:last-of-type {
+                    margin: 0;
+                }
+            }
+
+            &:hover {
+                color: $gold;
+            }
+        }
+    }
+
 }

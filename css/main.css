@@ -267,7 +267,7 @@ nav .nav-anchor {
 }
 @media (max-width: 767px) {
   nav .nav-anchor {
-    font-size: 30px;
+    font-size: 27px;
   }
 }
 html[dir=rtl] nav .nav-anchor {
@@ -891,6 +891,36 @@ html[dir=rtl] .contact-cont .contact-link {
     justify-content: center;
     text-align: center;
   }
+}
+.contact-cont .social {
+  display: flex;
+  align-items: center;
+}
+@media (max-width: 767px) {
+  .contact-cont .social {
+    justify-content: center;
+  }
+}
+.contact-cont .social .socila-link {
+  font-size: 18px;
+  color: #fff;
+  margin-right: 37px;
+  -moz-transition: all 0.3s ease-in-out;
+  -o-transition: all 0.3s ease-in-out;
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+}
+.contact-cont .social .socila-link:last-of-type {
+  margin: 0;
+}
+html[dir=rtl] .contact-cont .social .socila-link {
+  margin-left: 37px;
+}
+html[dir=rtl] .contact-cont .social .socila-link:last-of-type {
+  margin: 0;
+}
+.contact-cont .social .socila-link:hover {
+  color: #c2ad58;
 }
 
 /*# sourceMappingURL=main.css.map */
