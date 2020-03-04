@@ -1,0 +1,101 @@
+.projects-cont {
+    background-image: url("../images/projects.jpg");
+
+    .page-content {
+        flex-direction: column;
+        max-width: 50%;
+        align-items: flex-start;
+        z-index: 999;
+
+        @include xs {
+            max-width: 100%;
+            align-items: center;
+        }
+    }
+
+    .page-head {
+        #{$rtl} & {
+            font-size: 4rem;
+            font-family: ar-bold;
+
+            @include xs {
+                text-align: center;
+                font-size: 35px;
+            }
+        }
+
+        @include xs {
+            margin-bottom: 25px;
+        }
+    }
+
+    .page-text {
+        font-size: 1.7rem;
+        color: $fff;
+        font-family: light;
+        line-height: 1.706;
+
+        #{$rtl} & {
+            font-family: ar-light;
+        }
+
+        @include xs {
+            font-size: 16px;
+            text-align: center;
+        }
+
+        #{$rtl} & {
+            font-size: 2rem;
+        }
+    }
+
+    .btns {
+        margin-top: 8rem;
+    }
+
+    .btn {
+        text-transform: uppercase;
+        display: inline-flex;
+        align-items: center;
+        height: 4.5rem;
+        border-radius: 4.5rem;
+        padding: 0 4rem;
+        font-size: 1.6rem;
+        color: $fff;
+        @include transition(all 0.3s ease-in-out);
+
+        @include xs {
+            height: 40px;
+            padding: 0 25px;
+            border-radius: 40px;
+            font-size: 16px;
+        }
+
+        &.btn-explore {
+            background-image: linear-gradient(to right, $bg, $gold, $gold, $bg);
+            background-size: 200%;
+            @include transition(all 0.3s ease-in-out);
+            margin-right: 16px;
+
+            #{$rtl} & {
+                margin-right: 0;
+                margin-left: 16px;
+            }
+
+            &:hover {
+                background-position-x: 100%;
+            }
+        }
+
+        &.btn-next {
+            border: 1px solid $fff;
+            background-color: transparent;
+
+            &:hover {
+                border-color: $bg;
+                background-color: $bg;
+            }
+        }
+
+    }
+}
