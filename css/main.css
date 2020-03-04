@@ -1034,4 +1034,54 @@ html[dir=rtl] .projects-cont .btn.btn-explore {
   background-color: #a69038;
 }
 
+.services-cont {
+  background-image: url("../images/services.jpg");
+}
+.services-cont .page-content {
+  flex-direction: column;
+  align-items: center;
+  z-index: 99;
+}
+.services-cont .service-link {
+  font-size: 3.6rem;
+  font-family: exbold;
+  color: #fff;
+  background-image: linear-gradient(to right, #fff, #fff, #a69038, #c2ad58);
+  background-size: 300%;
+  background-clip: text;
+  -webkit-background-clip: text;
+  -moz-background-clip: text;
+  -o-background-clip: text;
+  color: transparent;
+  -moz-transition: all 0.5s ease-in-out;
+  -o-transition: all 0.5s ease-in-out;
+  -webkit-transition: all 0.5s ease-in-out;
+  transition: all 0.5s ease-in-out;
+  margin: 2.5rem 0px;
+}
+@media (max-width: 767px) {
+  .services-cont .service-link {
+    font-size: 30px;
+    margin: 25px 0;
+  }
+}
+.services-cont .service-link:hover {
+  transform: scale(1.35);
+  background-position-x: 100%;
+}
+@media (max-width: 767px) {
+  .services-cont .service-link:hover {
+    transform: none;
+  }
+}
+html[dir=rtl] .services-cont .service-link {
+  font-size: 4rem;
+  font-family: ar-exbold;
+}
+@media (max-width: 767px) {
+  html[dir=rtl] .services-cont .service-link {
+    font-size: 32px;
+  }
+}
+
 /*# sourceMappingURL=main.css.map */
