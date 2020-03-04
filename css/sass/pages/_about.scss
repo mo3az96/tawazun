@@ -1,0 +1,36 @@
+.about-cont {
+    background-image: url("../images/about.jpg");
+
+    .page-content {
+        flex-direction: column;
+        max-width: 50%;
+        align-items: flex-start;
+
+        @include xs {
+            max-width: 100%;
+            align-items: center;
+        }
+    }
+
+
+
+    .page-text {
+        font-size: 1.7rem;
+        color: $fff;
+        font-family: light;
+        line-height: 1.706;
+
+        #{$rtl} & {
+            font-family: ar-light;
+        }
+
+        @include xs {
+            font-size: 16px;
+            text-align: center;
+        }
+
+        #{$rtl} & {
+            font-size: 2rem;
+        }
+    }
+}

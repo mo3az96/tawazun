@@ -1,0 +1,196 @@
+.contact-cont {
+    background-image: url("../images/contact.jpg");
+
+    .page-content {
+        position: relative;
+        z-index: 9;
+        flex-direction: column;
+        padding-top: 15rem;
+    }
+
+    .page-head {
+        margin-bottom: 9rem;
+
+        @media (max-width: 1700px) {
+            margin-bottom: 3rem;
+            font-size: 30px;
+        }
+
+    }
+
+    .form-cont {
+        width: 100%;
+    }
+
+    .contact-form {
+        width: 45.5rem;
+        margin-left: auto;
+        margin-right: 2rem;
+
+        #{$rtl} & {
+            margin-right: auto;
+            margin-left: 2rem;
+        }
+
+        @include xs {
+            width: 100%;
+        }
+    }
+
+    .contact-input {
+        width: 100%;
+        height: 5.5rem;
+        padding: 0 2.8rem;
+        -moz-appearance: textfield;
+        text-align: left;
+        color: #b8b7b7;
+        font-size: 15px;
+        border-radius: 5.5rem;
+        margin-bottom: 1rem;
+        border: 1px solid #e6e6e6;
+        @include transition(all 0.3s ease-in-out);
+
+        @include xs {
+            width: 100%;
+            height: 40px;
+        }
+
+        &:focus {
+            border-color: $bg;
+        }
+
+        #{$rtl} & {
+            text-align: right;
+        }
+
+        &::placeholder {
+            color: #b8b7b7;
+            font-size: 15px;
+            text-align: left;
+
+            #{$rtl} & {
+                text-align: right;
+            }
+        }
+
+        &::-webkit-inner-spin-button,
+        &::-webkit-outer-spin-button {
+            -webkit-appearance: none;
+        }
+    }
+
+    .contact-textarea {
+        height: 11rem;
+        resize: none;
+        width: 100%;
+        padding: 2rem 2.8rem;
+        text-align: left;
+        color: #b8b7b7;
+        font-size: 15px;
+        border-radius: 2.75rem;
+        margin-bottom: 2rem;
+        border: 1px solid #e6e6e6;
+        @include transition(all 0.3s ease-in-out);
+
+        @include xs {
+            height: 110px;
+            border-radius: 20px;
+        }
+
+        &:focus {
+            border-color: $bg;
+        }
+
+        #{$rtl} & {
+            text-align: right;
+        }
+
+        &::placeholder {
+            color: #b8b7b7;
+            font-size: 15px;
+            text-align: left;
+
+            #{$rtl} & {
+                text-align: right;
+            }
+        }
+    }
+
+    .send {
+        background-image: linear-gradient(to right, $bg, $gold, $gold, $bg);
+        width: 14.2rem;
+        height: 5rem;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        color: $fff;
+        font-size: 1.6rem;
+        text-transform: uppercase;
+        border: none;
+        border-radius: 5rem;
+        margin: auto;
+
+        @include xs {
+            height: 40px;
+            border-radius: 40px;
+            width: 130px;
+            font-size: 16px;
+        }
+
+    }
+
+    .info-cont {
+        margin: 1.6rem 2rem;
+
+        @include xs {
+            margin-top: 30px;
+            text-align: center;
+        }
+    }
+
+    .info-head {
+        font-size: 2.4rem;
+        color: $fff;
+        font-family: semibold;
+        text-transform: uppercase;
+        margin-bottom: 2.4rem;
+
+        #{$rtl} & {
+            font-family: ar-bold;
+        }
+
+        @include xs {
+            font-size: 20px;
+        }
+    }
+
+    .contact-link {
+        display: flex;
+        font-family: light;
+        color: $fff;
+        margin-bottom: 15px;
+        @include transition(all 0.3s ease-in-out);
+        font-size: 1.7rem;
+
+        #{$rtl} & {
+            font-size: 2rem;
+            font-family: ar-light;
+
+            @include xs {
+                font-size: 14px;
+                justify-content: center;
+                text-align: center;
+            }
+        }
+
+        &:hover {
+            color: $hover;
+        }
+
+        @include xs {
+            font-size: 14px;
+            justify-content: center;
+            text-align: center;
+        }
+    }
+}

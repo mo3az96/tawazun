@@ -1,0 +1,112 @@
+nav {
+    position: fixed;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    background-image: -moz-linear-gradient(0deg, $bg 0%, $gold 100%);
+    background-image: -webkit-linear-gradient(0deg, $bg 0%, $gold 100%);
+    background-image: -ms-linear-gradient(0deg, $bg 0%, $gold 100%);
+    z-index: 99;
+    display: none;
+
+    #{$rtl} & {
+        background-image: -moz-linear-gradient(0deg, $gold 0%, $bg 100%);
+        background-image: -webkit-linear-gradient(0deg, $gold 0%, $bg 100%);
+        background-image: -ms-linear-gradient(0deg, $gold 0%, $bg 100%);
+    }
+
+    .social {
+        display: none;
+
+        @include xs {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            position: absolute;
+            bottom: 25px;
+            left: 50%;
+            transform: translateX(-50%);
+        }
+
+        .socila-link {
+            font-size: 20px;
+            color: $fff;
+            margin: 0 7px;
+            @include transition(all 0.3s ease-in-out);
+
+            &:hover {
+                color: $gold;
+            }
+        }
+    }
+
+    .mo-navbar {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        height: 100%;
+
+    }
+
+    .nav-li {
+        margin: 2rem 0;
+    }
+
+    .nav-anchor {
+        font-family: exbold;
+        color: $hover;
+        font-size: 3.6rem;
+        text-transform: uppercase;
+        @include transition(all 0.3s ease-in-out);
+        display: block;
+        position: relative;
+
+        #{$rtl} & {
+            font-family: ar-exbold;
+        }
+
+        &:after,
+        &:before {
+            position: absolute;
+            top: 50%;
+            width: 2.4rem;
+            height: 0.2rem;
+            content: "";
+            background-color: $fff;
+            opacity: 0;
+            visibility: hidden;
+            @include transition(all 0.3s ease-in-out);
+        }
+
+        &:after {
+            transform: translateY(-50%) translateX(100%);
+            left: calc(100% + 5rem);
+        }
+
+        &:before {
+            transform: translateY(-50%) translateX(-100%);
+            right: calc(100% + 5rem);
+        }
+
+        &:hover {
+            color: $fff;
+
+            &:after,
+            &:before {
+                opacity: 1;
+                visibility: visible;
+            }
+
+            &:after {
+                left: calc(100% + 1.5rem);
+            }
+
+            &:before {
+                right: calc(100% + 1.5rem);
+            }
+        }
+    }
+}
