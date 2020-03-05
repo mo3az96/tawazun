@@ -5,7 +5,7 @@
         flex-direction: column;
         max-width: 50%;
         align-items: flex-start;
-        z-index: 999;
+        z-index: 99;
 
         @include xs {
             max-width: 100%;
@@ -92,8 +92,8 @@
             background-color: transparent;
 
             &:hover {
-                border-color: $bg;
-                background-color: $bg;
+                color: $bg;
+                background-color: $fff;
             }
         }
 

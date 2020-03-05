@@ -1166,7 +1166,7 @@ html[dir=rtl] .contact-cont .social .socila-link:last-of-type {
   flex-direction: column;
   max-width: 50%;
   align-items: flex-start;
-  z-index: 999;
+  z-index: 99;
 }
 @media (max-width: 767px) {
   .projects-cont .page-content {
@@ -1253,8 +1253,8 @@ html[dir=rtl] .projects-cont .btn.btn-explore {
   background-color: transparent;
 }
 .projects-cont .btn.btn-next:hover {
-  border-color: #a69038;
-  background-color: #a69038;
+  color: #a69038;
+  background-color: #fff;
 }
 
 .services-cont {
