@@ -1149,7 +1149,8 @@ html[dir=rtl] .services-cont .service-link {
 }
 @media (max-width: 767px) {
   .service-cont .page-head {
-    font-size: 25px;
+    font-size: 35px;
+    text-align: center;
   }
 }
 .service-cont .services-links {
