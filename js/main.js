@@ -10,6 +10,7 @@ $(document).ready(function () {
     new WOW().init();
     $('.menubtn').click(function () {
         $("nav").fadeToggle("500")
+        $("nav").toggleClass("open")
         $(".quotation").toggleClass("open")
         $(".page-content").toggleClass("open")
         $(this).toggleClass('open');
