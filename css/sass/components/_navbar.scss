@@ -25,6 +25,16 @@ nav {
         background-image: -moz-linear-gradient(0deg, $gold 0%, $bg 100%);
         background-image: -webkit-linear-gradient(0deg, $gold 0%, $bg 100%);
         background-image: -ms-linear-gradient(0deg, $gold 0%, $bg 100%);
+        margin-right: auto;
+        margin-left: 0;
+        width: 0%;
+        @include transition(all 0.5s ease-in-out);
+
+        &.open {
+            margin-left: auto;
+            margin-right: 0;
+            width: 100%;
+        }
     }
 
     .social {

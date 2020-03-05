@@ -224,6 +224,18 @@ html[dir=rtl] nav {
   background-image: -moz-linear-gradient(0deg, #c2ad58 0%, #a69038 100%);
   background-image: -webkit-linear-gradient(0deg, #c2ad58 0%, #a69038 100%);
   background-image: -ms-linear-gradient(0deg, #c2ad58 0%, #a69038 100%);
+  margin-right: auto;
+  margin-left: 0;
+  width: 0%;
+  -moz-transition: all 0.5s ease-in-out;
+  -o-transition: all 0.5s ease-in-out;
+  -webkit-transition: all 0.5s ease-in-out;
+  transition: all 0.5s ease-in-out;
+}
+html[dir=rtl] nav.open {
+  margin-left: auto;
+  margin-right: 0;
+  width: 100%;
 }
 nav .social {
   display: none;
