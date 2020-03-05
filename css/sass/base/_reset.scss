@@ -2,7 +2,7 @@ body {
     position: relative;
     font-family: reg;
     max-height: 100vh;
-    background-color: black;
+    background-color: #fff;
 
     #{$rtl} & {
         font-family: ar;

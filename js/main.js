@@ -8,6 +8,11 @@ $(window).on("load", function () {
 });
 $(document).ready(function () {
     new WOW().init();
+    $("#topBtn").click(function () {
+        $('html, body').animate({
+            scrollTop: $("#topBtnRef").offset().top - 121
+        }, 2000);
+    });
     $('.menubtn').click(function () {
         $("nav").fadeToggle("500")
         $("nav").toggleClass("open")
@@ -30,4 +35,11 @@ $(document).ready(function () {
     } else {
         $(".services-links").removeClass("owl-carousel");
     }
+    $(window).scroll(function () {
+        if ($(this).scrollTop() >= 1) {
+            $("header.single-pro").addClass("fixed");
+        } else {
+            $("header.single-pro").removeClass("fixed");
+        }
+    });
 });

@@ -146,3 +146,110 @@
          }
      }
  }
+
+
+ .single-pro {
+     @include transition(all 0.3s ease-in-out);
+
+     .header-flex {
+         padding: 30px 0;
+         @include transition(all 0.3s ease-in-out);
+
+         .logo {
+             width: 141px;
+
+             @include xs {
+                 width: 14.1rem;
+             }
+
+             img {
+                 @include transition(all 0.3s ease-in-out);
+             }
+         }
+
+         .menu-btn-cont {
+             width: 199px;
+             @include transition(all 0.3s ease-in-out);
+
+             @include xs {
+                 width: 150px;
+             }
+         }
+
+         .quotation {
+             font-size: 18px;
+             width: 199px;
+             height: 55px;
+             border-radius: 55px;
+
+             @include xs {
+
+                 position: absolute;
+                 right: 15px;
+                 width: 130px;
+                 height: 35px;
+                 border-radius: 35px;
+                 font-size: 14px;
+
+                 #{$rtl} & {
+                     right: auto;
+                     left: 15px;
+                 }
+             }
+         }
+     }
+
+     &.fixed {
+         background-color: $fff;
+         box-shadow: 0px 0px 17px -3px rgba(#000, 0.7);
+
+         .header-flex {
+             padding: 10px 0;
+
+             .logo {
+                 width: 90px;
+
+                 @include xs {
+                     width: 13rem;
+                 }
+             }
+
+             .menu-btn-cont {
+                 width: 140px;
+             }
+
+             .quotation {
+                 font-size: 16px;
+                 width: 140px;
+                 height: 40px;
+                 border-radius: 40px;
+             }
+
+             .menubtn {
+
+
+                 span {
+                     background-color: $bg;
+                 }
+
+                 &:hover {
+                     span {
+                         background-color: $gold;
+                     }
+                 }
+
+                 &.open {
+                     span {
+                         background-color: $fff;
+                     }
+
+                     &:hover {
+                         span {
+                             background-color: $hover;
+                         }
+                     }
+                 }
+             }
+         }
+     }
+ }
