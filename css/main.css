@@ -910,7 +910,7 @@ html[dir=rtl] .about-cont .page-text {
 }
 @media (max-width: 767px) {
   .contact-cont .page-content {
-    padding: 0;
+    padding-top: 10rem;
   }
 }
 .contact-cont .page-head {
