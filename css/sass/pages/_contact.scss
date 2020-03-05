@@ -2,8 +2,7 @@
     background-image: url("../images/contact.jpg");
 
     .page-content {
-        position: relative;
-        z-index: 9;
+
         flex-direction: column;
         padding-top: 15rem;
 
@@ -23,6 +22,9 @@
     }
 
     .row {
+        position: relative;
+        z-index: 9;
+
         @include xs {
             display: flex;
             flex-direction: column;

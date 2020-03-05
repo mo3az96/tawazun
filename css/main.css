@@ -699,8 +699,6 @@ html[dir=rtl] .about-cont .page-text {
   background-image: url("../images/contact.jpg");
 }
 .contact-cont .page-content {
-  position: relative;
-  z-index: 9;
   flex-direction: column;
   padding-top: 15rem;
 }
@@ -717,6 +715,10 @@ html[dir=rtl] .about-cont .page-text {
     margin-bottom: 3rem;
     font-size: 30px;
   }
+}
+.contact-cont .row {
+  position: relative;
+  z-index: 9;
 }
 @media (max-width: 767px) {
   .contact-cont .row {
@@ -1101,13 +1103,18 @@ html[dir=rtl] .services-cont .service-link {
 .service-cont.eng-cont {
   background-image: url("../images/eng-services.jpg");
 }
+.service-cont.re-cont {
+  background-image: url("../images/re-services.jpg");
+}
 .service-cont .page-content {
   flex-direction: column;
-  z-index: 99;
+  position: static;
 }
 .service-cont .page-head {
   text-transform: capitalize;
   margin-bottom: 11rem;
+  position: relative;
+  z-index: 99;
 }
 @media (max-width: 767px) {
   .service-cont .page-head {
@@ -1120,6 +1127,8 @@ html[dir=rtl] .services-cont .service-link {
   align-items: center;
   justify-content: space-around;
   width: 100%;
+  position: relative;
+  z-index: 99;
 }
 @media (max-width: 767px) {
   .service-cont .services-links {
@@ -1136,6 +1145,9 @@ html[dir=rtl] .services-cont .service-link {
 .service-cont .services-link:hover .service-link-name {
   color: #c2ad58;
 }
+.service-cont .services-link:hover img {
+  transform: scale(1.05);
+}
 @media (max-width: 767px) {
   .service-cont .services-link {
     margin-bottom: 20px;
@@ -1148,6 +1160,13 @@ html[dir=rtl] .services-cont .service-link {
   align-items: center;
   justify-content: center;
   margin-bottom: 40px;
+}
+.service-cont .service-link-img img {
+  backface-visibility: hidden;
+  -moz-transition: all 0.3s ease-in-out;
+  -o-transition: all 0.3s ease-in-out;
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
 }
 @media (max-width: 767px) {
   .service-cont .service-link-img {

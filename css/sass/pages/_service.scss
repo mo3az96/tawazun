@@ -3,14 +3,20 @@
         background-image: url("../images/eng-services.jpg");
     }
 
+    &.re-cont {
+        background-image: url("../images/re-services.jpg");
+    }
+
     .page-content {
         flex-direction: column;
-        z-index: 99;
+        position: static;
     }
 
     .page-head {
         text-transform: capitalize;
         margin-bottom: 11rem;
+        position: relative;
+        z-index: 99;
 
         @include xs {
             margin-bottom: 50px;
@@ -23,6 +29,8 @@
         align-items: center;
         justify-content: space-around;
         width: 100%;
+        position: relative;
+        z-index: 99;
 
         @include xs {
             justify-content: center;
@@ -40,6 +48,11 @@
             .service-link-name {
                 color: $gold;
             }
+
+            img {
+
+                transform: scale(1.05);
+            }
         }
 
         @include xs {
@@ -54,6 +67,11 @@
         align-items: center;
         justify-content: center;
         margin-bottom: 40px;
+
+        img {
+            backface-visibility: hidden;
+            @include transition(all 0.3s ease-in-out);
+        }
 
         @include xs {
             margin-bottom: 15px;
