@@ -1098,4 +1098,84 @@ html[dir=rtl] .services-cont .service-link {
   }
 }
 
+.service-cont.eng-cont {
+  background-image: url("../images/eng-services.jpg");
+}
+.service-cont .page-content {
+  flex-direction: column;
+  z-index: 99;
+}
+.service-cont .page-head {
+  text-transform: capitalize;
+  margin-bottom: 11rem;
+}
+@media (max-width: 767px) {
+  .service-cont .page-head {
+    margin-bottom: 50px;
+    font-size: 25px;
+  }
+}
+.service-cont .services-links {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  width: 100%;
+}
+@media (max-width: 767px) {
+  .service-cont .services-links {
+    justify-content: center;
+    flex-direction: column;
+  }
+}
+.service-cont .services-link {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+.service-cont .services-link:hover .service-link-name {
+  color: #c2ad58;
+}
+@media (max-width: 767px) {
+  .service-cont .services-link {
+    margin-bottom: 20px;
+  }
+}
+.service-cont .service-link-img {
+  width: 102px;
+  height: 98px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 40px;
+}
+@media (max-width: 767px) {
+  .service-cont .service-link-img {
+    margin-bottom: 15px;
+  }
+}
+.service-cont .service-link-name {
+  font-size: 2rem;
+  font-family: med;
+  color: #fff;
+  -moz-transition: all 0.3s ease-in-out;
+  -o-transition: all 0.3s ease-in-out;
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+}
+@media (max-width: 767px) {
+  .service-cont .service-link-name {
+    font-size: 18px;
+  }
+}
+html[dir=rtl] .service-cont .service-link-name {
+  font-family: ar-med;
+  font-size: 2.3rem;
+}
+@media (max-width: 767px) {
+  html[dir=rtl] .service-cont .service-link-name {
+    font-size: 20px;
+  }
+}
+
 /*# sourceMappingURL=main.css.map */
