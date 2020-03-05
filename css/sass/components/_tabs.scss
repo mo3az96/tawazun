@@ -26,6 +26,11 @@
             @include xs {
                 margin: 0;
                 margin-right: 20px;
+
+                #{$rtl} & {
+                    margin: 0;
+                    margin-left: 20px;
+                }
             }
 
             &:last-of-type {
@@ -34,6 +39,10 @@
                 @include xs {
                     margin: 0;
                     margin-right: 0;
+
+                    #{$rtl} & {
+                        margin: 0;
+                    }
                 }
             }
         }

@@ -24,6 +24,7 @@
     .row {
         position: relative;
         z-index: 9;
+        width: 100%;
 
         @include xs {
             display: flex;

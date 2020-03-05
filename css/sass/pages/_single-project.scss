@@ -40,6 +40,10 @@
         color: $fff;
         font-family: bold;
 
+        #{$rtl} & {
+            font-family: ar-bold;
+        }
+
         @include xs {
             text-align: center;
             font-size: 35px;
@@ -79,6 +83,10 @@
             line-height: 1.5;
             text-align: center;
         }
+
+        #{$rtl} & {
+            font-family: ar-light;
+        }
     }
 }
 
@@ -109,10 +117,18 @@
     color: #000;
     line-height: 1;
 
+    #{$rtl} & {
+        font-family: ar-exbold;
+    }
+
     @include xs {
         font-size: 35px;
         font-family: bold;
         margin: 0 5px;
+
+        #{$rtl} & {
+            font-family: ar-bold;
+        }
     }
 }
 
@@ -182,6 +198,10 @@
             font-family: light;
             font-size: 18px;
             line-height: 1.889;
+
+            #{$rtl} & {
+                font-family: ar-light;
+            }
 
             @include xs {
                 text-align: center;
