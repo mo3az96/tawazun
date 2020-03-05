@@ -1,0 +1,33 @@
+.services-links {
+    .owl-nav {
+        width: 0;
+        height: 0;
+
+        button[class^=owl-] {
+            position: absolute;
+            top: 50%;
+            outline: none;
+            border: none;
+            transform: translateY(-50%);
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: rgba($fff, 0.5);
+            font-size: 20px;
+            @include transition(all 0.3s ease-in-out);
+
+            &.owl-next {
+                left: 0;
+            }
+
+            &.owl-prev {
+                right: 0;
+            }
+
+            &:hover {
+                color: $gold;
+            }
+        }
+    }
+}
