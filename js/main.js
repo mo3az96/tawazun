@@ -19,6 +19,7 @@ $(document).ready(function () {
         $(".quotation").toggleClass("open")
         $(".page-content").toggleClass("open")
         $(this).toggleClass('open');
+        $("body").toggleClass("overflow");
     });
 
     if ($(window).width() < 768) {
