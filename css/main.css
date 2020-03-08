@@ -677,7 +677,7 @@ header {
   height: 24px;
   cursor: pointer;
   position: relative;
-  z-index: 999;
+  z-index: 9999;
 }
 .header-flex .menubtn span {
   width: 100%;
