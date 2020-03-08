@@ -65,6 +65,10 @@
             background-color: transparent;
             color: $text;
         }
+
+        &:focus {
+            background-color: transparent;
+        }
     }
 
     li.active {

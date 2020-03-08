@@ -7,8 +7,14 @@
         align-items: flex-start;
         z-index: 99;
 
+        @include lg {
+            margin: 0 30px;
+            padding-top: 25px;
+        }
+
         @include xs {
             max-width: 100%;
+            margin: 0;
             align-items: center;
         }
     }
