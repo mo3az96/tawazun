@@ -23,6 +23,7 @@
 
      .menu-btn-cont {
          width: 19.9rem;
+         z-index: 9999;
 
          @include xs {
              width: 150px;

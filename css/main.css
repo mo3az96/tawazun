@@ -614,6 +614,7 @@ header {
 }
 .header-flex .menu-btn-cont {
   width: 19.9rem;
+  z-index: 9999;
 }
 @media (max-width: 767px) {
   .header-flex .menu-btn-cont {
@@ -1363,9 +1364,6 @@ html[dir=rtl] .services-cont .service-link {
 .service-cont .services-link:hover .service-link-name {
   color: #c2ad58;
 }
-.service-cont .services-link:hover svg {
-  transform: scale(1.05);
-}
 @media (max-width: 767px) {
   .service-cont .services-link {
     margin: auto;
@@ -1379,13 +1377,14 @@ html[dir=rtl] .services-cont .service-link {
   justify-content: center;
   margin-bottom: 40px;
 }
-.service-cont .service-link-img svg {
+.service-cont .service-link-img img {
   backface-visibility: hidden;
   -moz-transition: all 0.3s ease-in-out;
   -o-transition: all 0.3s ease-in-out;
   -webkit-transition: all 0.3s ease-in-out;
   transition: all 0.3s ease-in-out;
   width: auto !important;
+  max-height: 100%;
 }
 @media (max-width: 767px) {
   .service-cont .service-link-img {

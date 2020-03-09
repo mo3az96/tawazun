@@ -50,11 +50,6 @@
             .service-link-name {
                 color: $gold;
             }
-
-            svg {
-
-                transform: scale(1.05);
-            }
         }
 
         @include xs {
@@ -70,10 +65,11 @@
         justify-content: center;
         margin-bottom: 40px;
 
-        svg {
+        img {
             backface-visibility: hidden;
             @include transition(all 0.3s ease-in-out);
             width: auto !important;
+            max-height: 100%;
         }
 
         @include xs {
