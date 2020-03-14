@@ -24,6 +24,8 @@
      .menu-btn-cont {
          width: 19.9rem;
          z-index: 9999;
+         display: flex;
+         align-items: center;
 
          @include xs {
              width: 150px;
@@ -254,4 +256,28 @@
              }
          }
      }
+ }
+
+ .lang {
+     font-size: 2.4rem;
+     font-family: ar;
+     color: rgba(255, 255, 255, 0.5);
+     @include transition(all 0.3s ease-in-out);
+     margin: 0 5rem;
+     visibility: hidden;
+     opacity: 0;
+
+     &:hover {
+         color: #fff;
+     }
+
+     @include xs {
+         font-size: 15px;
+         margin: 0 10px;
+     }
+ }
+
+ .overflow .lang {
+     visibility: visible;
+     opacity: 1;
  }

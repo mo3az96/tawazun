@@ -615,6 +615,8 @@ header {
 .header-flex .menu-btn-cont {
   width: 19.9rem;
   z-index: 9999;
+  display: flex;
+  align-items: center;
 }
 @media (max-width: 767px) {
   .header-flex .menu-btn-cont {
@@ -810,6 +812,33 @@ html[dir=rtl] .header-flex .menubtn.open span:nth-child(2) {
 }
 .single-pro.fixed .header-flex .menubtn.open:hover span {
   background-color: rgba(255, 255, 255, 0.5);
+}
+
+.lang {
+  font-size: 2.4rem;
+  font-family: ar;
+  color: rgba(255, 255, 255, 0.5);
+  -moz-transition: all 0.3s ease-in-out;
+  -o-transition: all 0.3s ease-in-out;
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+  margin: 0 5rem;
+  visibility: hidden;
+  opacity: 0;
+}
+.lang:hover {
+  color: #fff;
+}
+@media (max-width: 767px) {
+  .lang {
+    font-size: 15px;
+    margin: 0 10px;
+  }
+}
+
+.overflow .lang {
+  visibility: visible;
+  opacity: 1;
 }
 
 .home-cont {
