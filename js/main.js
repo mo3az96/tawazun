@@ -7,6 +7,9 @@ $(window).on("load", function () {
     });
 });
 $(document).ready(function () {
+    $('select').selectpicker({
+        dropupAuto: false
+    });
     new WOW().init();
     $("#topBtn").click(function () {
         $('html, body').animate({

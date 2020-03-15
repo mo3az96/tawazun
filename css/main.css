@@ -1,3 +1,4 @@
+@charset "UTF-8";
 @keyframes vibe {
   0%, 100% {
     -webkit-transform: translateY(0);
@@ -1982,6 +1983,328 @@ html[dir=rtl] .contact-pro-cont .contact-textarea::placeholder {
     margin-bottom: 15px;
     margin-top: 10px;
   }
+}
+
+.first-sec.form {
+  background-image: url("../images/quotation.jpg");
+}
+
+.form-content {
+  padding-top: 165px;
+}
+@media (max-width: 767px) {
+  .form-content {
+    padding-top: 80px;
+  }
+}
+
+.form-main-head {
+  font-size: 36px;
+  color: #000;
+  font-family: bold;
+  margin-bottom: 15px;
+}
+@media (max-width: 767px) {
+  .form-main-head {
+    font-size: 27px;
+    text-align: center;
+  }
+}
+
+.form-subhead {
+  font-size: 24px;
+  color: #000;
+  font-family: med;
+  margin: 0px 0 30px;
+}
+@media (max-width: 767px) {
+  .form-subhead {
+    font-size: 20px;
+    text-align: center;
+  }
+}
+
+/* Customize the label (the container) */
+.custom-check {
+  display: block;
+  position: relative;
+  padding-left: 40px;
+  cursor: pointer;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  font-weight: unset;
+  margin-bottom: 25px;
+  white-space: nowrap;
+}
+@media (max-width: 767px) {
+  .custom-check {
+    white-space: unset;
+  }
+}
+html[dir=rtl] .custom-check {
+  padding-left: 0;
+  padding-right: 40px;
+}
+.custom-check .text {
+  font-size: 17px;
+  color: #808080;
+  -moz-transition: all 0.3s ease-in-out;
+  -o-transition: all 0.3s ease-in-out;
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+}
+.custom-check input {
+  position: absolute;
+  opacity: 0;
+  cursor: pointer;
+  height: 0;
+  width: 0;
+}
+.custom-check input:checked ~ .checkmark {
+  background-color: #b59f49;
+  border: 1px solid #b59f49;
+}
+.custom-check input:checked ~ .checkmark:after {
+  color: #fff;
+}
+.custom-check .checkmark {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  left: 0;
+  height: 26px;
+  width: 26px;
+  background-color: #fafafa;
+  border: 1px solid #e7e7e7;
+  border-radius: 50%;
+  -moz-transition: all 0.3s ease-in-out;
+  -o-transition: all 0.3s ease-in-out;
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+}
+html[dir=rtl] .custom-check .checkmark {
+  left: auto;
+  right: 0;
+}
+.custom-check .checkmark:after {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  font-family: "Font Awesome 5 Free";
+  font-weight: 900;
+  content: "";
+  font-size: 14px;
+  color: #fafafa;
+  -moz-transition: all 0.3s ease-in-out;
+  -o-transition: all 0.3s ease-in-out;
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+}
+.custom-check:hover input ~ .checkmark {
+  border: 1px solid #b59f49;
+}
+.custom-check:hover input ~ .checkmark:after {
+  color: #b59f49;
+}
+.custom-check:hover input:checked ~ .checkmark {
+  background-color: #b59f49;
+  border: 1px solid #b59f49;
+}
+.custom-check:hover input:checked ~ .checkmark:after {
+  color: #fff;
+}
+
+.custom-input {
+  width: 100%;
+  height: 55px;
+  padding: 0 28px;
+  -moz-appearance: textfield;
+  text-align: left;
+  color: #000;
+  font-size: 15px;
+  border-radius: 55px;
+  margin-bottom: 15px;
+  border: 1px solid #e6e6e6;
+  -moz-transition: all 0.3s ease-in-out;
+  -o-transition: all 0.3s ease-in-out;
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+}
+.custom-input.custom-text {
+  height: 136px;
+  border-radius: 27.5px;
+  padding: 15px 28px;
+  resize: none;
+}
+.custom-input:focus {
+  border-color: #b59f49;
+}
+html[dir=rtl] .custom-input {
+  text-align: right;
+}
+.custom-input::placeholder {
+  color: #b8b7b7;
+  font-size: 15px;
+  text-align: left;
+}
+html[dir=rtl] .custom-input::placeholder {
+  text-align: right;
+}
+.custom-input::-webkit-inner-spin-button, .custom-input::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+}
+
+.send-form {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-transform: capitalize;
+  font-size: 20px;
+  color: #fff;
+  background-image: linear-gradient(to right, #a69038, #c2ad58, #c2ad58, #a69038);
+  background-size: 200%;
+  width: 294px;
+  height: 60px;
+  border-radius: 60px;
+  border: none;
+  margin: 26px auto 0;
+  -moz-transition: all 0.3s ease-in-out;
+  -o-transition: all 0.3s ease-in-out;
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+}
+.send-form:hover {
+  background-position-x: 100%;
+}
+@media (max-width: 767px) {
+  .send-form {
+    margin: 26px auto 75px;
+  }
+}
+
+.bootstrap-select:not([class*=col-]):not([class*=form-control]):not(.input-group-btn) {
+  width: 100%;
+}
+.bootstrap-select.open .dropdown-toggle.btn-default {
+  color: #b8b7b7;
+  background-color: transparent;
+  outline: none !important;
+  box-shadow: none;
+  border-color: #b59f49;
+  border-bottom-color: transparent;
+  border-radius: 27.5px 27.5px 0 0;
+}
+.bootstrap-select.open .dropdown-toggle.btn-default:hover, .bootstrap-select.open .dropdown-toggle.btn-default:focus, .bootstrap-select.open .dropdown-toggle.btn-default:active {
+  color: #b8b7b7;
+  background-color: transparent;
+  outline: none !important;
+  box-shadow: none;
+  border-color: #b59f49;
+  border-bottom-color: transparent;
+}
+.bootstrap-select.open .dropdown-menu {
+  visibility: visible;
+  opacity: 1;
+}
+.bootstrap-select .dropdown-toggle {
+  height: 55px;
+  border: 1px solid #e6e6e6;
+  border-radius: 55px;
+  padding: 0 28px;
+  background-color: transparent;
+  color: #b8b7b7;
+  outline: none !important;
+  box-shadow: none;
+  font-size: 15px;
+}
+.bootstrap-select .dropdown-toggle:hover, .bootstrap-select .dropdown-toggle:focus, .bootstrap-select .dropdown-toggle:active {
+  color: #b8b7b7;
+  background-color: transparent;
+  outline: none !important;
+  box-shadow: none;
+  border-color: #e6e6e6;
+}
+.bootstrap-select .dropdown-toggle .filter-option {
+  float: unset;
+  text-align: left;
+  padding: 0;
+}
+html[dir=rtl] .bootstrap-select .dropdown-toggle .filter-option {
+  text-align: right;
+}
+.bootstrap-select .dropdown-toggle .bs-caret .caret {
+  display: none;
+}
+.bootstrap-select .dropdown-toggle .bs-caret:after {
+  color: #b8b7b7;
+  font-size: 15px;
+  content: "";
+  font-weight: 900;
+  font-family: "Font Awesome 5 Free";
+  margin: 0 10px 5px;
+}
+.bootstrap-select .dropdown-menu {
+  display: block;
+  border: 1px solid #b59f49;
+  box-shadow: none;
+  border-radius: 0 0 27.5px 27.5px;
+  border-top: none;
+  margin: -2px 0 0;
+  padding: 0;
+  visibility: hidden;
+  opacity: 0;
+  transition: 0.3s;
+}
+.bootstrap-select .dropdown-menu:focus {
+  outline: none;
+}
+.bootstrap-select .dropdown-menu.inner {
+  padding-bottom: 5px;
+}
+.bootstrap-select .dropdown-menu.inner li {
+  padding: 1px 0;
+}
+.bootstrap-select .dropdown-menu.inner li:focus {
+  outline: none;
+}
+.bootstrap-select .dropdown-menu.inner li.active a {
+  background-color: transparent;
+  color: #a79139;
+}
+.bootstrap-select .dropdown-menu.inner li a {
+  transition: 0.3s;
+  font-size: 14px;
+  padding: 0 28px;
+}
+.bootstrap-select .dropdown-menu.inner li a:hover {
+  background-color: transparent;
+  color: #a79139;
+}
+.bootstrap-select .dropdown-menu.inner li a:focus {
+  outline: none;
+  box-shadow: none;
+}
+
+.bs3.bootstrap-select .dropdown-toggle .filter-option {
+  padding: 0;
+}
+
+.custom-select {
+  margin-bottom: 15px;
+}
+
+.srvices-checkes,
+.srvices-redios,
+.Details {
+  margin-top: 55px;
+}
+
+.basic-info,
+.Property-info {
+  margin-top: 45px;
 }
 
 /*# sourceMappingURL=main.css.map */
